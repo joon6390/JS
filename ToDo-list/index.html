@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>ToDo</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="txtBox1">
+      <h1>현재 위치:</h1>
+      <h1 id="location-name-tag"></h1>
+    </div>
+    <p>현재 위치한 지역의 날씨와 맞는 배경화면이 보여집니다.</p>
+    <h1>ToDo-List</h1>
+    <p>항목을 더블클릭 하시면 삭제됩니다.</p>
+    <div class="todo-container">
+      <input
+        type="text"
+        id="todo-input"
+        onkeydown="keyCodeCheck()"
+        placeholder="할 일을 입력해주세요."
+      />
+      <ul id="todo-list"></ul>
+    </div>
+    <div class="delete-btn-wrapper">
+      <button onclick="deleteAll()">전체 삭제</button>
+    </div>
+  </body>
+</html>
